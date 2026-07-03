@@ -3,38 +3,6 @@ import { useState, useEffect } from "react";
 import { GitHubCalendar } from "react-github-calendar";
 import { useTheme } from "next-themes";
 
-const pseudoRandom = (str: string) => {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = str.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  return Math.abs(Math.sin(hash)) % 1;
-};
-
-const transformData = (data: any[]) => {
-  return data.map((day) => {
-    // If the day already has real contributions, keep them
-    if (day.count > 0) return day;
-
-    const rand = pseudoRandom(day.date);
-    // 55% chance of simulating a contribution on this day to look active but natural
-    if (rand < 0.55) {
-      let level = 1;
-      if (rand < 0.10) level = 4;      // High activity
-      else if (rand < 0.22) level = 3; // Medium-high activity
-      else if (rand < 0.38) level = 2; // Medium activity
-      
-      const count = level * 3 - Math.floor(rand * 3);
-      return {
-        ...day,
-        count: count,
-        level: level,
-      };
-    }
-    return day;
-  });
-};
-
 export default function GithubContribution() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -69,7 +37,6 @@ export default function GithubContribution() {
               username="ravithemore"
               theme={explicitTheme}
               colorScheme={theme === "dark" ? "dark" : "light"}
-              transformData={transformData}
             />
           ) : (
             <div className="h-[120px] w-full flex items-center justify-center text-xs text-neutral-400 dark:text-neutral-500 font-mono">
