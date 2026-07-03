@@ -12,8 +12,8 @@ export default function GithubContribution() {
   }, []);
 
   const explicitTheme = {
-    light: ["#f5f5f5", "#d4d4d4", "#a3a3a3", "#737373", "#262626"],
-    dark: ["#161616", "#2a2a2a", "#525252", "#8a8a8a", "#d4d4d4"],
+    light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
+    dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
   };
 
   return (
