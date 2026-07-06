@@ -7,6 +7,7 @@ import flyyped from "@/public/Project/ProjectImages/image.png";
 import taskTracker from "@/public/Project/ProjectImages/image copy.png";
 import shushiman from "@/public/Project/ProjectImages/image copy 2.png";
 import softtech from "@/public/Project/ProjectImages/image copy 3.png";
+import bean from "@/public/Project/ProjectImages/bean.png";
 
 export const projectBackgrounds = {
   bg1,
@@ -20,4 +21,5 @@ export const projectImages = {
   taskTracker,
   shushiman,
   softtech,
+  bean,
 };

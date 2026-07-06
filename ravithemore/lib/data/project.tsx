@@ -16,7 +16,8 @@ import {
   SiPostgresql,
   SiRedis,
   SiNextdotjs,
-  SiTailwindcss
+  SiTailwindcss,
+  SiSupabase
 } from "react-icons/si";
 import { FaReact, FaJava } from "react-icons/fa";
 
@@ -83,6 +84,25 @@ export const Project: ProjectCardProps[] = [
     video: "/Project/ProjectVideos/expand-lens.mp4",
   },
   {
+    id: 7,
+    name: "Interactive Portfolio & Tech Showcase",
+    slug: "portfolio",
+    type: "Personal Portfolio Website",
+    description: "A premium, ultra-interactive personal portfolio website built using Next.js 16, Tailwind CSS, Framer Motion, and Supabase.",
+    isActive: true,
+    backgroundImage: projectBackgrounds.bg3,
+    projectImage: projectImages.flyyped,
+    stack: [
+      { icon: <SiNextdotjs size={18} color="#000000" />, label: "Next.js" },
+      { icon: <FaReact size={18} color="#61DAFB" />, label: "React" },
+      { icon: <SiTailwindcss size={18} color="#06B6D4" />, label: "Tailwind CSS" },
+      { icon: <SiSupabase size={18} color="#3ECF8E" />, label: "Supabase" },
+    ],
+    link: "https://ravithemore.vercel.app",
+    github: "https://github.com/ravithemore/Portfolio",
+    video: "/Project/ProjectVideos/portfolio.mp4",
+  },
+  {
     id: 1,
     name: "Bangalore House Price Prediction",
     slug: "bangalore-house-price-prediction",
@@ -90,7 +110,7 @@ export const Project: ProjectCardProps[] = [
     description: "A machine learning application that predicts house prices in Bangalore using Linear Regression and real estate market data.",
     isActive: false,
     backgroundImage: projectBackgrounds.bg1,
-    projectImage: projectImages.flyyped,
+    projectImage: projectImages.bean,
     stack: [
       { icon: <SiPython size={18} color="#3776AB" />, label: "Python" },
       { icon: <SiFlask size={18} color="#000000" />, label: "Flask" },
@@ -99,7 +119,7 @@ export const Project: ProjectCardProps[] = [
       { icon: <SiScikitlearn size={18} color="#F7931E" />, label: "Scikit-learn" },
     ],
     link: "",
-    video: "",
+    video: "/Project/ProjectVideos/waiting.mp4",
   },
   {
     id: 2,
@@ -109,14 +129,14 @@ export const Project: ProjectCardProps[] = [
     description: "Predicts software engineer salaries using Stack Overflow survey data and machine learning models.",
     isActive: false,
     backgroundImage: projectBackgrounds.bg2,
-    projectImage: projectImages.taskTracker,
+    projectImage: projectImages.bean,
     stack: [
       { icon: <SiPython size={18} color="#3776AB" />, label: "Python" },
       { icon: <SiStreamlit size={18} color="#FF4B4B" />, label: "Streamlit" },
       { icon: <SiPandas size={18} color="#150458" />, label: "Pandas" },
     ],
     link: "",
-    video: "",
+    video: "/Project/ProjectVideos/waiting.mp4",
   },
   {
     id: 3,
@@ -126,7 +146,7 @@ export const Project: ProjectCardProps[] = [
     description: "Web-based library management platform featuring authentication, book tracking, reporting, and administrative features.",
     isActive: false,
     backgroundImage: projectBackgrounds.bg3,
-    projectImage: projectImages.shushiman,
+    projectImage: projectImages.bean,
     stack: [
       { icon: <SiPhp size={18} color="#777BB4" />, label: "PHP" },
       { icon: <SiMysql size={18} color="#4479A1" />, label: "MySQL" },
@@ -135,24 +155,6 @@ export const Project: ProjectCardProps[] = [
       { icon: <SiCss size={18} color="#1572B6" />, label: "CSS" },
     ],
     link: "",
-    video: "",
-  },
-  {
-    id: 4,
-    name: "P2P Chat Application",
-    slug: "p2p-chat",
-    type: "Communication Platform",
-    description: "Decentralized peer-to-peer messaging platform built using React and Holepunch technology.",
-    isActive: false,
-    backgroundImage: projectBackgrounds.bg4,
-    projectImage: projectImages.softtech,
-    stack: [
-      { icon: <FaReact size={18} color="#61DAFB" />, label: "ReactJS" },
-      { icon: <SiJavascript size={18} color="#F7DF1E" />, label: "JavaScript" },
-      { icon: <SiHtml5 size={18} color="#E34F26" />, label: "HTML" },
-      { icon: <SiCss size={18} color="#1572B6" />, label: "CSS" },
-    ],
-    link: "",
-    video: "",
+    video: "/Project/ProjectVideos/waiting.mp4",
   },
 ];
