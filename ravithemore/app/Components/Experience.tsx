@@ -39,9 +39,9 @@ const WORK_EXPERIENCE: WorkExp[] = [
         description: `Built and maintained REST APIs using Java and Spring Boot across multiple DMRO platform microservices—covering shop certification, slot planning, bulk upload, parking lot, and master-data workflows.
 Designed JPA entities, DTOs, repositories, and Flyway migration scripts for live PostgreSQL schema changes; documented all APIs with Swagger/ OpenAPI annotations following enterprise patterns.
 Developed dynamic Angular UIs with component-driven architecture, RxJS data flows, and responsive layouts; handled Angular version upgrades, fixing build toolchain and compiler issues to maintain CI/CD compatibility.
-Built an advanced Excel template generator featuring dynamic dropdowns, sheet protection, freeze panes, and JSZip XML injection for workbook structure locking — ensuring compatibility across Microsoft Excel, LibreOffice, and Google Sheets.
+Developed an advanced Excel template generator featuring dynamic dropdowns, sheet protection, freeze panes, and JSZip XML injection for workbook structure locking — ensuring compatibility across Microsoft Excel, LibreOffice, and Google Sheets.
 Wrote JUnit and Mockito unit tests including Java Reflection-based tests for private methods, pushing new code coverage past SonarQube's mandatory 80% quality gate across multiple services.
-Implemented OAuth 2.0 client credentials flow and security endpoint whitelisting for GE Aerospace SSO integration; resolved Node.js microservice blockers including Redis/ioredis-mock injection and hybrid local-cloud proxy configuration.
+Implemented OAuth 2.0 client credentials flow and security endpoint whitelisting for enterprise SSO integration; resolved Node.js microservice blockers including Redis/ioredis-mock injection and hybrid local-cloud proxy configuration.
 Collaborated in Agile sprints, participated in code reviews, and resolved CI/CD build issues across AWS CodeBuild and Jenkins pipelines to ensure smooth releases.`,
         skills: [
           "Java",
@@ -62,5 +62,34 @@ Collaborated in Agile sprints, participated in code reviews, and resolved CI/CD 
       },
     ],
     isCurrentEmployer: true,
+  },
+  {
+    id: "neuronexus",
+    companyName: "NeuroNexus Innovations",
+    companyLogo: Labmetix, // TODO: replace with actual NeuroNexus logo, add image to /public first
+    companyWebsite: "",
+    positions: [
+      {
+        id: "1",
+        title: "Machine Learning Intern",
+        employmentPeriod: {
+          start: "07.2024",
+          end: "03.2025",
+        },
+        employmentType: "Remote",
+        description: `Developed machine learning models for customer churn prediction and spam detection using Python and Scikit-learn.
+Performed data preprocessing, feature engineering, and exploratory data analysis on structured datasets.
+Improved model performance through hyperparameter tuning and validation techniques.`,
+        skills: [
+          "Python",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy",
+          "Feature Engineering",
+          "Data Analysis",
+        ],
+      },
+    ],
+    isCurrentEmployer: false,
   },
 ];

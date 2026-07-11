@@ -81,7 +81,7 @@ const ProjectCard = ({
                 className={`absolute w-2 h-2 -translate-y-1/2 left-1/2 top-1/2 ${isActive ? "bg-green-500 " : "bg-orange-400"} rounded-full   -translate-x-1/2`}
               />
             </div>
-            {active ? "Live" : "Building.."}
+            {active ? "Live" : "In Progress"}
           </span>
         </div>
         <p className="text-xs text-neutral-400 group-hover:text-neutral-700 dark:group-hover:text-neutral-300 transition  mb-1">

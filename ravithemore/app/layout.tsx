@@ -12,23 +12,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://ravithemore.netlify.app";
+// TODO: once the custom domain is purchased and pointed at Vercel, change this
+// to the new domain (e.g. "https://ravidamor.dev") instead of the vercel.app URL.
+const siteUrl = "https://ravithemore.vercel.app";
+
+const siteDescription =
+  "Full-stack engineer building production systems with Java, Spring Boot, and Angular, plus ML and AI-powered tools. Experience spans backend architecture, machine learning, and product development from idea to deployment.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ravi Damor - Software Engineer & Backend Developer",
+    default: "Ravi Damor - Full-Stack Engineer & Creator",
     template: "%s – Ravi Damor",
   },
-  description: "Software Engineer specializing in Java, Spring Boot, microservices, and distributed systems. Exploring AI, ML, and open-source.",
+  description: siteDescription,
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "Ravi Damor - Software Engineer & Creator",
-    description:
-      "Software Engineer specializing in Java, Spring Boot, microservices, and distributed systems. Exploring AI, ML, and open-source.",
+    title: "Ravi Damor - Full-Stack Engineer & Creator",
+    description: siteDescription,
     url: siteUrl,
     siteName: "Ravi Damor",
     locale: "en_US",
@@ -36,9 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ravi Damor - Software Engineer & Backend Developer",
-    description:
-      "Software Engineer specializing in Java, Spring Boot, microservices, and distributed systems.",
+    title: "Ravi Damor - Full-Stack Engineer & Creator",
+    description: siteDescription,
   },
 };
 

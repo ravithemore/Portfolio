@@ -2,10 +2,9 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import displayPicture from "@/public/profile.jpg";
-import {  MailIcon, CalendarClock } from "lucide-react";
+import {  MailIcon, FileText } from "lucide-react";
 import ShinyText from "../Global/ShineText";
 import Link from "next/link";
-import { getCalApi } from "@calcom/embed-react";
 
 const phrases = [
   "Software Engineer",
@@ -43,12 +42,6 @@ const Profile = () => {
     return () => clearInterval(id);
   }, []);
 
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "quickchat" });
-      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-    })();
-  }, []);
 
   return (
     <div
@@ -112,15 +105,16 @@ const Profile = () => {
             Get in touch
           </button>
         </Link>
-        <button
-          data-cal-namespace="quickchat"
-          data-cal-link="ravimdamor/quickchat"
-          data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-          className="flex-grow sm:flex-grow-0 px-4 flex items-center cursor-pointer justify-center gap-1.5 dark:border-neutral-700 dark:bg-neutral-100 dark:text-neutral-900 text-neutral-800 border border-neutral-200 text-[12px] font-medium py-2 rounded-[10px]"
+        <Link
+          href="https://drive.google.com/file/d/1ZoVsryy_J8c0rLCVk67U4LnC2lX2sv9N/view?usp=sharing"
+          target="_blank"
+          className="flex-grow sm:flex-grow-0"
         >
-          <CalendarClock className="w-3.5 h-3.5" />
-          Book a Meet
-        </button>
+          <button className="w-full px-4 flex items-center cursor-pointer justify-center gap-1.5 dark:border-neutral-700 dark:bg-neutral-100 dark:text-neutral-900 text-neutral-800 border border-neutral-200 text-[12px] font-medium py-2 rounded-[10px]">
+            <FileText className="w-3.5 h-3.5" />
+            My Cheat Sheet (CV)
+          </button>
+        </Link>
 
         {/* Social Buttons Container to keep them together on wrap */}
         <div className="flex gap-2 flex-grow sm:flex-grow-0">
