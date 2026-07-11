@@ -2,7 +2,7 @@
 
 A premium, ultra-interactive, and highly visual personal portfolio website built using a state-of-the-art web stack. This site acts as a professional resume, project showcase, and interactive canvas showcasing advanced front-end interaction, custom synthesis sound design, and premium UI animations.
 
-Live site: [ravithemore.netlify.app](https://ravithemore.netlify.app)
+Live site: [ravithemore.vercel.app](https://ravithemore.vercel.app)
 
 ---
 
