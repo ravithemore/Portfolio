@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Provider from "@/app/Provider";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -58,6 +60,34 @@ export default function RootLayout({
     >
       <body className="flex realtive flex-col">
         <Provider>{children}</Provider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Ravi Damor",
+              "url": siteUrl,
+              "sameAs": [
+                "https://github.com/ravithemore",
+                "https://www.linkedin.com/in/ravithemore",
+                "https://x.com/ravithemor"
+              ],
+              "jobTitle": "Full-Stack Engineer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Tata Consultancy Services"
+              },
+              "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "VIT Bhopal University"
+              },
+              "description": siteDescription
+            })
+          }}
+        />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
