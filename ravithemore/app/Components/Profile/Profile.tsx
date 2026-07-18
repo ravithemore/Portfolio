@@ -106,7 +106,7 @@ const Profile = () => {
           </button>
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1ZoVsryy_J8c0rLCVk67U4LnC2lX2sv9N/view?usp=sharing"
+          href="https://drive.google.com/file/d/1lC-9aeBb55YloPbyzoXr6Hi0Sd1h-P6U/view?usp=sharing"
           target="_blank"
           className="flex-grow sm:flex-grow-0"
         >
