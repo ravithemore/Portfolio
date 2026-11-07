@@ -3,6 +3,12 @@ import { BlogCard } from "@/app/Components/Blogs";
 import type { Metadata } from "next";
 const BlogMetaData: BlogDataProps[] = [
   {
+    title: "HTTP Just Got a New Method After 16 Years: Meet QUERY",
+    description: "An in-depth look at RFC 10008, the safe and idempotent HTTP QUERY method that solves the long-standing GET vs POST dilemma for complex queries.",
+    link: "https://dev.to/ravithemore/http-just-got-a-new-method-after-16-years-meet-query-3oic",
+    date: "18-06-2026",
+  },
+  {
     title: "My Experience with Syncloop API Development Platform",
     description: "A comprehensive look at Syncloop, a visual API development and deployment platform that speeds up backend development.",
     link: "https://ravithemore.hashnode.dev/my-experience-with-syncloop-api-development-platform",

@@ -8,6 +8,7 @@ import taskTracker from "@/public/Project/ProjectImages/image copy.png";
 import shushiman from "@/public/Project/ProjectImages/image copy 2.png";
 import softtech from "@/public/Project/ProjectImages/image copy 3.png";
 import bean from "@/public/Project/ProjectImages/bean.png";
+import gitshame from "@/public/Project/ProjectImages/gitshame.png";
 
 export const projectBackgrounds = {
   bg1,
@@ -22,4 +23,5 @@ export const projectImages = {
   shushiman,
   softtech,
   bean,
+  gitshame,
 };

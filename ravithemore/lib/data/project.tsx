@@ -17,7 +17,9 @@ import {
   SiRedis,
   SiNextdotjs,
   SiTailwindcss,
-  SiSupabase
+  SiSupabase,
+  SiTypescript,
+  SiGithub
 } from "react-icons/si";
 import { FaReact, FaJava } from "react-icons/fa";
 
@@ -103,23 +105,24 @@ export const Project: ProjectCardProps[] = [
     video: "/Project/ProjectVideos/portfolio.mp4",
   },
   {
-    id: 1,
-    name: "Bangalore House Price Prediction",
-    slug: "bangalore-house-price-prediction",
-    type: "Machine Learning Web Application",
-    description: "A machine learning application that predicts house prices in Bangalore using Linear Regression and real estate market data.",
-    isActive: false,
-    backgroundImage: projectBackgrounds.bg1,
-    projectImage: projectImages.bean,
+    id: 8,
+    name: "GitShame",
+    slug: "git-shame",
+    type: "Developer Tool / Web App",
+    description: "A developer-focused web application that analyzes GitHub profiles, repository hygiene, and commit habits to deliver humorous accountability roasts and insights.",
+    isActive: true,
+    backgroundImage: projectBackgrounds.bg4,
+    projectImage: projectImages.gitshame,
     stack: [
-      { icon: <SiPython size={18} color="#3776AB" />, label: "Python" },
-      { icon: <SiFlask size={18} color="#000000" />, label: "Flask" },
-      { icon: <SiPandas size={18} color="#150458" />, label: "Pandas" },
-      { icon: <SiNumpy size={18} color="#013243" />, label: "NumPy" },
-      { icon: <SiScikitlearn size={18} color="#F7931E" />, label: "Scikit-learn" },
+      { icon: <SiNextdotjs size={18} color="#000000" />, label: "Next.js" },
+      { icon: <FaReact size={18} color="#61DAFB" />, label: "React" },
+      { icon: <SiTypescript size={18} color="#3178C6" />, label: "TypeScript" },
+      { icon: <SiTailwindcss size={18} color="#06B6D4" />, label: "Tailwind CSS" },
+      { icon: <SiGithub size={18} color="#181717" />, label: "GitHub API" },
     ],
-    link: "",
-    video: "/Project/ProjectVideos/waiting.mp4",
+    link: "https://gitshame.vercel.app/",
+    github: "https://github.com/ravithemore/git-shame",
+    video: "/Project/ProjectVideos/gitshame.mp4",
   },
   {
     id: 2,
